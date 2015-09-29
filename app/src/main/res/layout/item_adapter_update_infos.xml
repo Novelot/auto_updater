@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="180px"
+                android:layout_height="120dp"
                 android:background="#2b2b2b">
 
     <ImageView
         android:id="@+id/ivIcon"
-        android:layout_width="80px"
-        android:layout_height="80px"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="84px"
-        android:layout_marginRight="36px"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="12dp"
+        android:adjustViewBounds="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="centerInside"
         android:src="@mipmap/ic_launcher"/>
 
     <LinearLayout
@@ -28,45 +32,45 @@
             android:singleLine="true"
             android:text="Name"
             android:textColor="@android:color/white"
-            android:textSize="18sp"/>
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/tvAppVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10px"
+            android:layout_marginTop="5dp"
             android:singleLine="true"
             android:text="Version"
             android:textColor="#999999"
-            android:textSize="14sp"/>
+            android:textSize="13sp"/>
     </LinearLayout>
 
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="84dp"
+        android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="84px">
+        android:layout_marginRight="56dp">
 
         <ProgressBar
             android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="126px"
-            android:layout_height="54px"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_centerInParent="true"
+            android:gravity="center"
             android:visibility="gone"/>
 
         <Button
             android:id="@+id/btnUpdate"
-            android:layout_width="126px"
-            android:layout_height="54px"
+            android:layout_width="84dp"
+            android:layout_height="36dp"
             android:layout_centerInParent="true"
             android:background="@drawable/shape_bg_btn_update"
             android:gravity="center"
             android:text="@string/update"
             android:textColor="@drawable/selector_bg_text_update"
-            android:textSize="18px"/>
+            android:textSize="12sp"/>
     </RelativeLayout>
 
 

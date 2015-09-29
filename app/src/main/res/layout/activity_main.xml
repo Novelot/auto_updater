@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:layout_alignParentTop="true"
-        android:background="#2b2b2b"
+        android:background="#242424"
         android:gravity="center">
 
         <TextView
@@ -19,13 +19,13 @@
             android:gravity="center"
             android:text="@string/app_update"
             android:textColor="#359ced"
-            android:textSize="22sp"/>
+            android:textSize="15sp"/>
     </android.support.v7.widget.Toolbar>
 
     <View
         android:id="@+id/line"
         android:layout_width="match_parent"
-        android:layout_height="10px"
+        android:layout_height="3dp"
         android:layout_below="@+id/title"
         android:background="#383838"/>
 
@@ -35,8 +35,8 @@
         android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:layout_below="@+id/line"
         android:background="#242424"
-        android:paddingLeft="84px"
-        android:paddingRight="84px">
+        android:paddingLeft="56dp"
+        android:paddingRight="56dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
             android:layout_centerVertical="true"
             android:text="@string/waiting_update_app"
             android:textColor="#999999"
-            android:textSize="18sp"/>
+            android:textSize="12sp"/>
 
         <TextView
             android:id="@+id/tvUpdataAll"
@@ -55,7 +55,7 @@
             android:layout_centerVertical="true"
             android:text="@string/update_all_app"
             android:textColor="#359ced"
-            android:textSize="18sp"/>
+            android:textSize="12sp"/>
     </RelativeLayout>
 
     <!--<android.support.v4.widget.SwipeRefreshLayout-->
@@ -73,11 +73,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:drawablePadding="24px"
+            android:drawablePadding="16dp"
             android:drawableTop="@mipmap/ic_no_updagte"
             android:text="@string/all_app_is_new"
             android:textColor="#747474"
-            android:textSize="18sp"/>
+            android:textSize="12sp"/>
 
 
         <android.support.v7.widget.RecyclerView
